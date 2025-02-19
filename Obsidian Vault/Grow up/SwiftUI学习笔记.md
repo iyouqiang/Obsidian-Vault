@@ -177,7 +177,7 @@ struct ContentView: View {
 
 ### 6. `@Environment`
 
-`@Environment` 用于获取从环境中传递的值。它通常用于获取系统提供的环境值（如颜色、字体等）或应用自定义的全局环境数据。
+`@Environment` 用于获取从环境中传递的值。它通常用于获取系统提供的环境值（如颜色、字体等）或应用==自定义的全局环境数据==。
 
 - **使用时机**：当你需要访问系统的环境变量（如颜色、字体等），或访问应用程序的环境设置时，使用 `@Environment`。
     
@@ -204,4 +204,156 @@ struct ContentView: View {
 6. **@Environment**：访问系统或应用提供的环境数据。
 
 **使用时机**：你选择哪种状态管理方式取决于数据的使用范围、生命周期以及你希望如何在视图之间共享数据。
+
+### 7. `@Bindable`
+
+在 SwiftUI 中，`@Bindable` 是一个用于标记对象的属性包装器（Property Wrapper）。它主要用于 **绑定对象**，并使其支持 **双向绑定**（two-way binding），从而使视图能够与该对象的状态进行交互。
+
+### 作用：
+
+`@Bindable` 修饰的属性通常用于 **可观察的对象**，使得这个对象能够自动更新视图中的绑定值，并且当视图中的数据变化时，能自动反向更新模型对象中的数据。
+
+### 何时使用 `@Bindable`：
+
+- 当你有一个可观察对象（`ObservableObject`）并希望能够在视图中直接修改它时，使用 `@Bindable` 使它能够参与视图的绑定。
+- 它用于支持双向绑定，通常与 `@State`, `@Binding`, 或 `@ObservedObject` 配合使用。
+
+### 基本用法：
+
+```
+class ModelData: ObservableObject {
+    @Published var name = "John"
+}
+
+```
+
+然后在视图中使用：
+```
+@Bindable var modelData = ModelData()
+```
+这里的 `modelData` 将会自动与视图绑定，在视图中修改它时，模型中的数据会被同步更新。
+
+### 与 `@Binding` 和 `@State` 的关系：
+
+- `@Binding` 用于 **父视图与子视图之间的双向数据绑定**。父视图可以通过 `@Binding` 将数据传递给子视图，并允许子视图修改这些数据。
+- `@State` 是一个视图局部的 **状态属性**，它用于保存和管理视图的局部状态。它是一个 **值类型**。
+- `@Bindable` 用于标记一个对象，使它能够绑定并支持 **双向绑定**，它通常用于一个 **引用类型**（`ObservableObject`）的状态，像 `ModelData` 这样的可观察对象。
+
+### 示例：
+
+假设你有一个 `ModelData` 类，它包含一些数据，并希望这个数据能够与视图绑定：
+```
+class ModelData: ObservableObject {
+    @Published var name = "John"
+}
+
+```
+
+然后在你的视图中，使用 `@Bindable` 来实现绑定：
+```
+struct ContentView: View {
+    @Bindable var modelData = ModelData()
+
+    var body: some View {
+        VStack {
+            TextField("Name", text: $modelData.name) // 双向绑定
+            Text("Hello, \(modelData.name)") // 自动更新视图
+        }
+    }
+}
+
+```
+在这个例子中，`modelData.name` 的值被绑定到 `TextField`，并且视图会随着 `name` 的变化自动更新。当你修改 `TextField` 的内容时，`modelData.name` 的值也会改变，反之亦然。
+
+### 总结：
+
+`@Bindable` 修饰符使得可观察的对象（`ObservableObject`）能够参与视图的双向数据绑定，并能使视图与对象的状态进行交互。这是实现 **双向绑定** 的关键，通常与其他属性包装器（如 `@State`、`@Binding` 和 `@ObservedObject`）一起使用。
+
+### 8. `@`Published``
+
+在 SwiftUI 中， 是一个用于属性的 **属性包装器**，它的作用是让一个类的属性变得 **可观察**，并且当这个属性发生变化时，会通知所有订阅该属性的视图进行更新。
+
+### 主要作用：
+
+- **自动通知变化**：`@Published` 会将属性变为 **可观察的**（`ObservableObject`）。当属性的值发生变化时，所有绑定到这个属性的视图会自动更新。
+- **与 `ObservableObject` 配合使用**：`@Published` 通常用在 **`ObservableObject`** 中，表示属性会在变化时触发视图更新。
+
+### 使用场景：
+
+- 当你需要监控一个属性的变化，并希望视图在这个属性变化时自动更新，使用 `@Published` 来标记这个属性。
+- 它主要用于 **数据模型** 中的属性，通过与 `@State`、`@Binding` 和 `@ObservedObject` 等视图属性配合使用，完成数据的双向绑定。
+
+### 详细说明：
+
+1. **声明类时的使用**： `@Published` 用于声明类中的一个属性，这样当该属性的值变化时，会自动通知所有观察它的视图进行更新。
+    
+```
+    class UserData: ObservableObject {
+    @Published var name: String
+    
+    init(name: String) {
+        self.name = name
+    }
+}
+```
+    
+2. **视图中的使用**： 在 SwiftUI 视图中，可以通过 `@ObservedObject` 或 `@StateObject` 来订阅 `@Published` 属性的变化。
+```
+    struct ContentView: View {
+    @ObservedObject var userData = UserData(name: "John")
+    
+    var body: some View {
+        VStack {
+            Text(userData.name)  // 自动更新
+            Button("Change Name") {
+                userData.name = "Jane"  // 改变属性值，视图自动更新
+            }
+        }
+    }
+}
+```
+    在上面的代码中，当 `userData.name` 的值发生变化时，`Text` 视图会自动更新，显示新的名字。
+    
+
+### 核心概念：
+
+- `@Published` 主要作用是 **通知观察者属性发生了变化**，并自动触发视图更新。在 `ObservableObject` 中标记某个属性为 `@Published`，意味着当这个属性的值改变时，所有绑定这个对象的视图都会被刷新。
+- 它不需要手动调用更新函数，`SwiftUI` 会自动处理更新过程。
+
+### 示例：
+```
+class UserData: ObservableObject {
+    @Published var name: String
+    @Published var age: Int
+    
+    init(name: String, age: Int) {
+        self.name = name
+        self.age = age
+    }
+}
+```
+然后在视图中使用 `@ObservedObject` 来观察这些属性的变化：
+
+```
+struct ContentView: View {
+    @ObservedObject var userData = UserData(name: "Alice", age: 30)
+    
+    var body: some View {
+        VStack {
+            Text("Name: \(userData.name)")
+            Text("Age: \(userData.age)")
+            
+            Button("Change Name") {
+                userData.name = "Bob"  // 修改属性值，视图自动更新
+            }
+        }
+    }
+}
+```
+
+每当你点击按钮改变 `name` 或 `age` 时，视图会自动更新。
+
+### 总结：
+
+`@Published` 是一种非常方便的方式来 **自动观察** 数据的变化，并让视图实时响应这些变化。它使得数据模型与视图之间的绑定更加高效和简洁，尤其在涉及到 **动态变化的视图** 时，使用 `@Published` 可以帮助简化代码和保持状态同步。
 
