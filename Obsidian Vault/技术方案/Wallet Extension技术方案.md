@@ -8,6 +8,7 @@ https://developer.apple.com/documentation/passkit/implementing-wallet-extensions
 
 iOS 运行 14 或更高版本的iOS设备
 Xcode 15或更高版本
+测试设备： SEID需要注册到visa
 
 #### Apple Pay配置方式
 
