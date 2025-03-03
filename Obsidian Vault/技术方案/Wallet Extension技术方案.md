@@ -10,6 +10,8 @@ iOS 运行 14 或更高版本的iOS设备
 Xcode 15或更高版本
 测试设备： SEID需要注册到visa
 
+https://developer.apple.com/forums/thread/767458
+
 #### Apple Pay配置方式
 
 **1、应用内配置：**
@@ -271,3 +273,5 @@ Apple 对 Extension 的大小并没有直接规定硬性限制，但以下是相
 
 5. 配置完成后，扩展会自动将用户返回到 Wallet
   ![[wallet-extensions-experience.12e2361972fd43d1c27e9d04e612e7e2.png]]
+### 新增绑卡提示语
+
