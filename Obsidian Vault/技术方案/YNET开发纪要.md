@@ -65,7 +65,15 @@ charlescoffey2436@gmail.com
 密码
 Tt557755
 密保
-朋友q333----工作w222---父母e111----1990-01-01
+朋友q333----工作w222---父母e111----1990-01-
+
+
+*******
+#转换crt证书到PEM再到cer，不可直接转否则会有格式问题
+
+#openssl x509 -in www_ibanking_chbank_com.2024.crt   -out prdcer20251218.pem -outform PEM
+
+#openssl x509 -inform pem -in  prdcer20251218.pem    -outform der -out prdcer20251218.cer
 
 
 
