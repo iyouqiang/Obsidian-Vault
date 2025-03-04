@@ -76,6 +76,9 @@ Tt557755
 #openssl x509 -inform pem -in  prdcer20251218.pem    -outform der -out prdcer20251218.cer
 
 
+AI
+https://chatgpt.com/c/67bbd9bf-3778-8010-b232-0d702592f376
+https://chat.deepseek.com/
 
 
 

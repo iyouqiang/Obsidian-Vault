@@ -95,12 +95,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Obsidian Vault/TODOList.md",
+                "file": "Obsidian Vault/技术方案/Kian的开发纪要.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TODOList"
+              "title": "Kian的开发纪要"
             }
           }
         ],
@@ -253,20 +253,21 @@
   },
   "active": "662d1ce364935645",
   "lastOpenFiles": [
-    "Obsidian Vault/技术方案/YNET开发纪要.md",
+    "Obsidian Vault/技术方案/CHMobileBank.md",
     "Obsidian Vault/技术方案/TODO.md",
+    "Obsidian Vault/ATODOList.md",
+    "Obsidian Vault/GrowUp/iOS开发纪要&核心要点.md",
+    "Obsidian Vault/GrowUp/iOS 技术点纪要.md",
+    "Obsidian Vault/GrowUp/快速记忆法.md",
+    "Obsidian Vault/技术方案/Kian的开发纪要.md",
     "Obsidian Vault/技术方案/Wallet Extension技术方案.md",
     "Obsidian Vault/技术方案/Wallet Extension 咨询.md",
     "Obsidian Vault/技术方案/Wallet Extension.md",
     "Obsidian Vault/GrowUp/SwiftUI学习笔记.md",
-    "Obsidian Vault/TODOList.md",
-    "Obsidian Vault/GrowUp/iOS开发纪要&核心要点.md",
-    "Obsidian Vault/GrowUp/iOS 技术点纪要.md",
     "Obsidian Vault/UserInfo/userInfoList.md",
     "Obsidian Vault/Zsource/A模板范式.md",
     "Obsidian Vault/GrowUp/心得体悟.md",
     "Obsidian Vault/GrowUp/企业策划.md",
-    "Obsidian Vault/GrowUp/记忆宫殿.md",
     "Obsidian Vault/GrowUp/读书单.md",
     "Obsidian Vault/GrowUp/大A沉浮录.md",
     "Obsidian Vault/GrowUp/2025读书清单.md",
