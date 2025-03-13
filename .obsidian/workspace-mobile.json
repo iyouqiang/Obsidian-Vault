@@ -1,14 +1,14 @@
 {
   "main": {
-    "id": "5c4107787afe86f9",
+    "id": "23c77d819957abdd",
     "type": "split",
     "children": [
       {
-        "id": "2f0fd74b6b4aae6f",
+        "id": "139ba03c5b93e572",
         "type": "tabs",
         "children": [
           {
-            "id": "9571d440668886fe",
+            "id": "e199a473e78d21ce",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -27,11 +27,11 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "e6a6c0704812074e",
+    "id": "29c2db8281c13489",
     "type": "mobile-drawer",
     "children": [
       {
-        "id": "86bf42117abe1563",
+        "id": "6ea248be7c752546",
         "type": "leaf",
         "state": {
           "type": "file-explorer",
@@ -44,7 +44,7 @@
         }
       },
       {
-        "id": "8aaedc0c091f1d36",
+        "id": "a688128c2ac2c945",
         "type": "leaf",
         "state": {
           "type": "search",
@@ -61,7 +61,7 @@
         }
       },
       {
-        "id": "fe22d9f701e8e95b",
+        "id": "b4b5ea3b5852d8a2",
         "type": "leaf",
         "state": {
           "type": "tag",
@@ -76,7 +76,7 @@
         }
       },
       {
-        "id": "f84cb1375b2f62c9",
+        "id": "db7ac55f863a12d1",
         "type": "leaf",
         "state": {
           "type": "bookmarks",
@@ -89,15 +89,16 @@
     "currentTab": 0
   },
   "right": {
-    "id": "0d477784c4080d40",
+    "id": "38a518ec1659bcf9",
     "type": "mobile-drawer",
     "children": [
       {
-        "id": "6d48f9587bd9e9e3",
+        "id": "6ef055f9bfb6d883",
         "type": "leaf",
         "state": {
           "type": "backlink",
           "state": {
+            "file": "Obsidian Vault/GrowUp/快速记忆法.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -111,11 +112,12 @@
         }
       },
       {
-        "id": "98f48112f32de1a9",
+        "id": "e152dff65a9fa1b2",
         "type": "leaf",
         "state": {
           "type": "outgoing-link",
           "state": {
+            "file": "Obsidian Vault/TODOList.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           },
@@ -124,11 +126,12 @@
         }
       },
       {
-        "id": "2d85b9aa8d389b55",
+        "id": "d6360e21a968ac44",
         "type": "leaf",
         "state": {
           "type": "outline",
           "state": {
+            "file": "Obsidian Vault/TODOList.md",
             "followCursor": false,
             "showSearch": false,
             "searchQuery": ""
@@ -150,9 +153,47 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9571d440668886fe",
+  "active": "e199a473e78d21ce",
   "lastOpenFiles": [
+    "Obsidian Vault/Developer/Flutter学习笔记.md",
+    "Obsidian Vault/GrowUp/快速记忆法.md",
+    "Obsidian Vault/TODOList.md",
+    "Obsidian Vault/GrowUp/Flutter学习笔记.md",
+    "Obsidian Vault/UserInfo/userInfoList.md",
+    "Obsidian Vault/技术方案/创兴-TODO.md",
+    "Obsidian Vault/GrowUp/2025读书清单.md",
+    "Obsidian Vault/技术方案/Kian的开发纪要.md",
+    "Obsidian Vault/技术方案/创兴-Wallet Extension.md",
+    "Obsidian Vault/技术方案/创兴-项目文档.md",
+    "Obsidian Vault/技术方案/创兴-设备更新.md",
+    "Obsidian Vault/技术方案/创兴-亮点功能.md",
+    "Obsidian Vault/GrowUp/心得体悟.md",
     "Obsidian Vault/技术方案/TODO.md",
-    "Obsidian Vault/TODOList.md"
+    "Obsidian Vault/GrowUp/大A沉浮录.md",
+    "Obsidian Vault/技术方案/Wallet Extension技术方案.md",
+    "Obsidian Vault/技术方案/CHMobileBank.md",
+    "Obsidian Vault/技术方案/Wallet Extension 咨询.md",
+    "Obsidian Vault/技术方案/Wallet Extension.md",
+    "Obsidian Vault/Zsource/WechatIMG322.jpg",
+    "Obsidian Vault/Zsource/IMG_2559.png",
+    "Obsidian Vault/Zsource/IMG_2572.png",
+    "Obsidian Vault/Zsource/截屏2025-02-11 19.22.26.png",
+    "Obsidian Vault/Zsource/截屏2025-02-11 19.02.53.png",
+    "Obsidian Vault/Zsource/技能点复盘.txt",
+    "Obsidian Vault/Zsource/wallet-extensions-flow.4416c1ca0ec5b83c4843da6e9d96993b.png",
+    "Obsidian Vault/Zsource/A模板范式.md",
+    "Obsidian Vault/Zsource/截屏2025-02-11 19.06.56.png",
+    "Obsidian Vault/Zsource/截屏2025-02-11 19.02.26.png",
+    "Obsidian Vault/Zsource/截屏2025-02-13 09.23.44.png",
+    "Obsidian Vault/Zsource/截屏2025-02-11 19.15.32.png",
+    "Obsidian Vault/Zsource/（VincentG）.xlsx",
+    "Obsidian Vault/Zsource/陈致逸,HOYO-MiX - Dawn Winery Theme 晨曦酒庄.mp3",
+    "Obsidian Vault/Zsource/PM.mp4",
+    "Obsidian Vault/GrowUp/iOS 技术点纪要.md",
+    "Obsidian Vault/GrowUp/Python爬虫笔记.md",
+    "Obsidian Vault/GrowUp/iOS开发纪要&核心要点.md",
+    "Obsidian Vault/GrowUp/读书单.md",
+    "Obsidian Vault/GrowUp/SwiftUI学习笔记.md",
+    "Obsidian Vault/GrowUp/interview提纲.md"
   ]
 }
