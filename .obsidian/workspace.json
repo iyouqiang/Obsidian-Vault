@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Obsidian Vault/TODOList.md",
+                "file": "Obsidian Vault/TechnicalScheme/To-Do List.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TODOList"
+              "title": "To-Do List"
             }
           }
         ],
@@ -185,8 +185,8 @@
   },
   "active": "ee65be1b5dedffec",
   "lastOpenFiles": [
-    "Obsidian Vault/TechnicalScheme/To-Do List.md",
     "Obsidian Vault/TODOList.md",
+    "Obsidian Vault/TechnicalScheme/To-Do List.md",
     "Obsidian Vault/Developer/VS Code 快捷键.md",
     "Obsidian Vault/TechnicalScheme/Kian的开发纪要.md",
     "Obsidian Vault/UserInfo/userInfoList.md",
