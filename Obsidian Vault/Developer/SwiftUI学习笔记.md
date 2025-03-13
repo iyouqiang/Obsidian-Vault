@@ -357,3 +357,26 @@ struct ContentView: View {
 
 `@Published` 是一种非常方便的方式来 **自动观察** 数据的变化，并让视图实时响应这些变化。它使得数据模型与视图之间的绑定更加高效和简洁，尤其在涉及到 **动态变化的视图** 时，使用 `@Published` 可以帮助简化代码和保持状态同步。
 
+# Swift 第一轮学习总结
+#### SwiftUI与现有项目交互
+
+**SwiftUI对接现有项目**
+Coordinator
+UIViewRepresentable/UIViewControllerRepresentable
+
+**现有项目对接SwiftUI**
+UIHostingController
+
+记忆提取key:  Swift UI
+
+| 优势                        | SwiftUI 提供的能力                                    |
+| ------------------------- | ------------------------------------------------ |
+| **声明式 UI** /S             | 代码更简洁，逻辑更清晰                                      |
+| **少代码，高效开发** /t           | 避免手写 `Storyboard` 和 `Auto Layout`                |
+| **响应式数据绑定** /f            | `@State` `@Binding` `@ObservedObject` 让 UI 与数据同步 |
+| **跨平台支持** /               | iOS、macOS、watchOS、tvOS 共享 UI 代码                  |
+| **实时预览（Live Preview）** /i | Xcode 直接预览 UI，无需运行 App                           |
+| **内置动画支持** /I             | `withAnimation` 实现丝滑动画                           |
+| **兼容 UIKit**  /U          | 可混合使用 `UIViewControllerRepresentable`            |
+| **适用于 MVVM 架构** /W        | 结合 `Combine` 更现代化                                |
+

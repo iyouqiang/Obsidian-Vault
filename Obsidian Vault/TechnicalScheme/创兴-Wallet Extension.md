@@ -275,3 +275,8 @@ Apple 对 Extension 的大小并没有直接规定硬性限制，但以下是相
   ![[wallet-extensions-experience.12e2361972fd43d1c27e9d04e612e7e2.png]]
 ### 新增绑卡提示语
 
+### 开功能总结
+1、18.1~18.2 存在对Wallet不兼容问题
+2、Wallet Extension功能开发完成，发布到TestFlight，即可完成绑定
+3、login页面必须使用Swift开发，否则无法弹出
+
