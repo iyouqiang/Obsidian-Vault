@@ -29,9 +29,69 @@ IDE推荐：
 
 ### 三、开发纪要
 
-Dart语法学习
+### Dart
 
-[DartPad 在线编辑](https://dartpad.dev/?sample=hello-world)
+ 1. **官方文档**
+- **Dart 语言官方文档**: [Dart Language Tour](https://dart.dev/guides/language/language-tour)
+    
+    - 这是 Dart 官方提供的语言指南，涵盖了 Dart 的核心语法和特性，适合初学者和有经验的开发者。
+        
+ 2. **在线教程**
+
+- **Dart Academy**: [Dart Academy](https://dart.academy/)
+    
+    - 提供从基础到高级的 Dart 教程，适合系统学习。
+        
+- **Flutter & Dart - The Complete Guide**: [Udemy Course](https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/)
+    
+    - 虽然主要针对 Flutter，但也深入讲解了 Dart 语法，适合想通过项目学习 Dart 的开发者。
+        
+
+ 3. **书籍**
+
+- **Dart in Action**: [Dart in Action](https://www.manning.com/books/dart-in-action)
+    
+    - 这本书详细介绍了 Dart 语言及其应用，适合想深入学习 Dart 的开发者。
+        
+- **Programming in Dart**: [Programming in Dart](https://www.amazon.com/Programming-Dart-Fundamentals-Developers-Guide/dp/0321941890)
+    
+    - 适合初学者的 Dart 编程指南，内容全面。
+        
+
+ 4. **视频教程**
+
+- **Dart Programming Tutorial - Full Course**: [YouTube](https://www.youtube.com/watch?v=Ej_Pcr4uC2Q)
+    
+    - 这是一个免费的 Dart 编程完整课程，适合初学者。
+        
+- **Flutter & Dart - The Complete Flutter App Development Course**: [YouTube](https://www.youtube.com/watch?v=x0uinJvhNxI)
+    
+    - 虽然主要针对 Flutter，但也详细讲解了 Dart 语法。
+        
+
+ 5. **互动学习平台**
+
+- **DartPad**: [DartPad](https://dartpad.dev/)
+    
+    - 一个在线 Dart 代码编辑器，适合边学边练。
+        
+- **Exercism Dart Track**: [Exercism](https://exercism.io/tracks/dart)
+    
+    - 提供 Dart 编程练习，适合通过实践学习。
+        
+
+ 6. **社区和论坛**
+
+- **Dart 官方社区**: [Dart Community](https://dart.dev/community)
+    
+    - 可以在这里提问、分享经验，获取帮助。
+        
+- **Stack Overflow**: [Dart Questions](https://stackoverflow.com/questions/tagged/dart)
+
+
+### flutter 
+#### [flutter Doc](https://docs.flutter.dev/)
+
 
 
 
