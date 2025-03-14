@@ -36,29 +36,8 @@ IDE推荐：
     
     - 这是 Dart 官方提供的语言指南，涵盖了 Dart 的核心语法和特性，适合初学者和有经验的开发者。
         
- 2. **在线教程**
-
-- **Dart Academy**: [Dart Academy](https://dart.academy/)
-    
-    - 提供从基础到高级的 Dart 教程，适合系统学习。
-        
-- **Flutter & Dart - The Complete Guide**: [Udemy Course](https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/)
-    
-    - 虽然主要针对 Flutter，但也深入讲解了 Dart 语法，适合想通过项目学习 Dart 的开发者。
-        
-
- 3. **书籍**
-
-- **Dart in Action**: [Dart in Action](https://www.manning.com/books/dart-in-action)
-    
-    - 这本书详细介绍了 Dart 语言及其应用，适合想深入学习 Dart 的开发者。
-        
-- **Programming in Dart**: [Programming in Dart](https://www.amazon.com/Programming-Dart-Fundamentals-Developers-Guide/dp/0321941890)
-    
-    - 适合初学者的 Dart 编程指南，内容全面。
-        
-
- 4. **视频教程**
+ 
+ 2. **视频教程**
 
 - **Dart Programming Tutorial - Full Course**: [YouTube](https://www.youtube.com/watch?v=Ej_Pcr4uC2Q)
     
@@ -69,7 +48,7 @@ IDE推荐：
     - 虽然主要针对 Flutter，但也详细讲解了 Dart 语法。
         
 
- 5. **互动学习平台**
+ 3. **互动学习平台**
 
 - **DartPad**: [DartPad](https://dartpad.dev/)
     
@@ -80,7 +59,7 @@ IDE推荐：
     - 提供 Dart 编程练习，适合通过实践学习。
         
 
- 6. **社区和论坛**
+ 4. **社区和论坛**
 
 - **Dart 官方社区**: [Dart Community](https://dart.dev/community)
     
@@ -89,10 +68,9 @@ IDE推荐：
 - **Stack Overflow**: [Dart Questions](https://stackoverflow.com/questions/tagged/dart)
 
 
-### flutter 
-#### [flutter Doc](https://docs.flutter.dev/)
+### 创建 Dart 项目
 
-
-
-
-
+1. **创建一个新的 Dart 项目**  
+    打开 VS Code，按下 `Ctrl+Shift+P`（或 `Cmd+Shift+P` 在 macOS 上），在命令面板中输入并==选择 `Dart: New Project`。然后选择 "Console Application"（命令行应用）== ，为你的项目选择一个合适的文件夹和名称。 终端 `dart run`
+    
+### flutter
