@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Obsidian Vault/TODOList.md",
+                "file": "Obsidian Vault/GrowUp/快速记忆法.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TODOList"
+              "title": "快速记忆法"
             }
           }
         ]
@@ -155,9 +155,9 @@
   },
   "active": "e199a473e78d21ce",
   "lastOpenFiles": [
+    "Obsidian Vault/TODOList.md",
     "Obsidian Vault/Developer/Flutter学习笔记.md",
     "Obsidian Vault/GrowUp/快速记忆法.md",
-    "Obsidian Vault/TODOList.md",
     "Obsidian Vault/GrowUp/Flutter学习笔记.md",
     "Obsidian Vault/UserInfo/userInfoList.md",
     "Obsidian Vault/技术方案/创兴-TODO.md",
