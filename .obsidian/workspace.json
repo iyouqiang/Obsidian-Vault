@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Obsidian Vault/TODOList.md",
+                "file": "Obsidian Vault/TechnicalScheme/To-Do List.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TODOList"
+              "title": "To-Do List"
             }
           },
           {
@@ -49,8 +49,7 @@
               "title": "TODOList"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -197,10 +196,10 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "ee65be1b5dedffec",
+  "active": "6810fe286581dee1",
   "lastOpenFiles": [
-    "Obsidian Vault/TechnicalScheme/To-Do List.md",
     "Obsidian Vault/TODOList.md",
+    "Obsidian Vault/TechnicalScheme/To-Do List.md",
     "Obsidian Vault/UserInfo/userInfoList.md",
     "Obsidian Vault/TechnicalScheme/创兴-项目文档.md",
     "Obsidian Vault/GrowUp/大A沉浮录.md",
