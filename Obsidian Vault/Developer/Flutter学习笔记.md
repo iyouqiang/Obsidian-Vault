@@ -73,4 +73,168 @@ IDE推荐：
 1. **创建一个新的 Dart 项目**  
     打开 VS Code，按下 `Ctrl+Shift+P`（或 `Cmd+Shift+P` 在 macOS 上），在命令面板中输入并==选择 `Dart: New Project`。然后选择 "Console Application"（命令行应用）== ，为你的项目选择一个合适的文件夹和名称。 终端 `dart run`
     
-### flutter
+
+### **1. `mixin` 的用法**
+
+`mixin` 是 Dart 中专门用于代码复用的关键字，**只能通过混入（`with`）的方式被其他类或 `mixin` 使用**，**不能直接实例化**。
+
+#### **定义方式**：
+
+```
+mixin MyMixin {
+  void log(String message) {
+    print('Mixin Log: $message');
+  }
+}
+```
+
+#### **使用限制**：
+
+- **不能有构造函数**（无法通过 `MyMixin()` 创建实例）。
+    
+- **可以包含方法实现和属性**。
+    
+- **可以指定依赖类型**（通过 `on` 关键字限定混入的基类）。
+    
+
+#### **示例**：
+
+```
+class Animal {
+  void eat() => print('Eating...');
+}
+
+// ==MyMixin 只能被混入到 Animal 或其子类==
+mixin MyMixin on Animal {
+  void logAction() => print('Action logged!');
+}
+
+class Dog extends Animal with MyMixin {
+  void bark() => print('Woof!');
+}
+
+void main() {
+  var dog = Dog();
+  dog.eat();      // 继承自 Animal
+  dog.logAction(); // 来自 MyMixin
+  dog.bark();     // Dog 自身的方法
+}
+```
+---
+
+### **2. `mixin class` 的用法**
+
+`mixin class` 是 Dart 3.0 引入的新语法，**允许一个类同时作为普通类和 `mixin` 使用**。这种类既可以被继承（`extends`），也可以被混入（`with`）。
+
+#### **定义方式**：
+
+```
+mixin class MyMixinClass {
+  void printMessage(String msg) {
+    print('Message: $msg');
+  }
+}
+```
+#### **使用限制**：
+
+- **可以有构造函数**（但作为 `mixin` 混入时，构造函数会被忽略）。
+    
+- **既可以作为普通类继承，也可以作为 `mixin` 混入**。
+    
+#### **示例**：
+
+```
+// 作为普通类继承
+class BaseClass extends MyMixinClass {
+  void baseMethod() => print('Base method');
+}
+
+// 作为 mixin 混入
+class CombinedClass with MyMixinClass {
+  void combinedMethod() => print('Combined method');
+}
+
+void main() {
+  var base = BaseClass();
+  base.printMessage('Hello'); // 来自 MyMixinClass
+  base.baseMethod();
+
+  var combined = CombinedClass();
+  combined.printMessage('Hi'); // 来自 MyMixinClass
+  combined.combinedMethod();
+}
+```
+---
+
+### **3. 核心区别对比**
+
+|**特性**|**`mixin`**|**`mixin class`**|
+|---|---|---|
+|**定义关键字**|`mixin`|`mixin class`|
+|**能否直接实例化**|❌ 不能|✅ 可以|
+|**能否被继承（`extends`）**|❌ 不能|✅ 可以|
+|**能否被混入（`with`）**|✅ 只能被混入|✅ 可以作为混入|
+|**构造函数**|❌ 禁止|✅ 可以有构造函数|
+|**依赖限制（`on`）**|✅ 支持|❌ 不支持|
+
+---
+
+### **4. 如何选择？**
+
+- **使用 `mixin`**：  
+    当需要**纯粹复用代码逻辑**且无需实例化时（例如日志工具、验证逻辑）。
+    
+- **使用 `mixin class`**：  
+    当需要**一个既能复用代码又能独立实例化**的类时（例如基础工具类，既可以直接使用，也可混入其他类）。
+    
+
+---
+
+### **5. 代码示例对比**
+
+#### **`mixin` 的典型场景**：
+```
+mixin Logger {
+  void log(String msg) => print('Log: $msg');
+}
+
+class User with Logger {
+  void login() {
+    log('User logged in');
+  }
+}
+```
+#### **`mixin class` 的典型场景**：
+
+```
+mixin class CacheManager {
+  final Map<String, dynamic> _cache = {};
+
+  void cacheData(String key, dynamic value) {
+    _cache[key] = value;
+  }
+
+  dynamic getData(String key) => _cache[key];
+}
+
+// 直接实例化
+var cache = CacheManager();
+cache.cacheData('token', 'abc123');
+
+// 混入到其他类
+class AppService with CacheManager {
+  void initialize() {
+    cacheData('config', {});
+  }
+}
+```
+
+---
+
+### **总结**
+
+- `mixin` 是**纯复用逻辑**的工具，强调无状态和非实例化。
+    
+- `mixin class` 是**混合类**，既能复用逻辑又能独立存在。
+    
+- 根据是否需要实例化或继承来选择使用哪种方式。
