@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Obsidian Vault/Developer/Flutter学习笔记.md",
+                "file": "Obsidian Vault/TechnicalScheme/创兴-新功能推广提升.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Flutter学习笔记"
+              "title": "创兴-新功能推广提升"
             }
           }
         ]
@@ -170,32 +170,33 @@
   },
   "active": "6810fe286581dee1",
   "lastOpenFiles": [
+    "Obsidian Vault/TechnicalScheme/技术文档模版.md",
+    "Obsidian Vault/TechnicalScheme/创兴-新功能推广提升.md",
+    "Obsidian Vault/TechnicalScheme/创兴-设备更新.md",
+    "Obsidian Vault/TechnicalScheme/创兴-亮点功能.md",
+    "Obsidian Vault/TechnicalScheme/Kian的开发纪要.md",
     "Obsidian Vault/TODOList.md",
     "Obsidian Vault/TechnicalScheme/To-Do List.md",
+    "Obsidian Vault/Developer/Flutter学习笔记.md",
+    "Obsidian Vault/GrowUp/大A沉浮录.md",
+    "Obsidian Vault/GrowUp/2025读书清单.md",
+    "Obsidian Vault/Developer/Interview提纲.md",
     "Obsidian Vault/UserInfo/userInfoList.md",
     "Obsidian Vault/TechnicalScheme/创兴-项目文档.md",
-    "Obsidian Vault/GrowUp/大A沉浮录.md",
     "Obsidian Vault/Developer/VS Code 快捷键.md",
-    "Obsidian Vault/Developer/Interview提纲.md",
-    "Obsidian Vault/Developer/Flutter学习笔记.md",
     "Obsidian Vault/GrowUp/心得体悟.md",
     "Obsidian Vault/GrowUp/企业策划.md",
     "Obsidian Vault/GrowUp/快速记忆法.md",
     "Obsidian Vault/GrowUp/读书单.md",
-    "Obsidian Vault/GrowUp/2025读书清单.md",
     "Obsidian Vault/Developer/iOS开发纪要&核心要点.md",
     "Obsidian Vault/Developer/Python爬虫笔记.md",
     "Obsidian Vault/Developer/iOS 技术点纪要.md",
-    "Obsidian Vault/TechnicalScheme/创兴-亮点功能.md",
     "auto Test.md",
-    "Obsidian Vault/TechnicalScheme/Kian的开发纪要.md",
     "Obsidian Vault/Zsource/A模板范式.md",
     "Obsidian Vault/TechnicalScheme/创兴-Wallet Extension.md",
     "Obsidian Vault/Developer/SwiftUI学习笔记.md",
     "Obsidian Vault/Developer",
-    "Obsidian Vault/TechnicalScheme/创兴-设备更新.md",
     "Obsidian Vault/技术方案/Wallet Extension 咨询.md",
-    "Obsidian Vault/技术方案/Wallet Extension.md",
     "Obsidian Vault/TechnicalScheme",
     "Obsidian Vault/GrowUp",
     "Obsidian Vault/Zsource/（VincentG）.xlsx",
@@ -214,7 +215,6 @@
     "Obsidian Vault/Zsource/PM.mp4",
     "Obsidian Vault/Zsource",
     "Obsidian Vault/UserInfo",
-    "Obsidian Vault/README.md",
     "Obsidian Vault/技能点复盘.txt"
   ]
 }
